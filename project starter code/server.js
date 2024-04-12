@@ -35,7 +35,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util.js';
   // Root Endpoint
   // Displays a simple message to the user
   app.get( "/", async (req, res) => {
-    res.send("try GET /filteredimage?image_url={{}}")
+    res.send("try GET /filteredimage?image_url={{}}. For example /filteredimage?image_url=https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2020/5/12/804813/Ozil.jpg");
   } );
   
   app.get("/filteredimage", async (req, res) => {
