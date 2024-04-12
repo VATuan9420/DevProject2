@@ -51,6 +51,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util.js';
       
     } catch (error) {
       console.log("[ERROR]", error);
+      res.status(422).send("Something Went Wrong");
     }
   });
 
